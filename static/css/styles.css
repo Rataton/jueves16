@@ -1,0 +1,9 @@
+header{
+	text-align: center;
+	background: url(http://www.mascotashop.com/blog/wp-content/uploads/patos-mascotas.jpg);
+	background-size: cover;
+	color: white;
+	height: 400px;
+}
+ul { padding: 0; }
+ul li { list-style:none; }

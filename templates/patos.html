@@ -1,0 +1,20 @@
+{% extends 'bases/base.html' %}
+{% block content %}
+	<div class="container">
+		<div class="row">
+			<div class="center.blcok">
+				{% if patos %}
+				<h1>Hola, soy Patos</h1>
+				{% else %}
+				<h1>No hay patos</h1>
+				{% endif %}
+				<ul>
+					{% for pato in patos %}
+					<li><strong>{{ pato.nombre }}</strong> es un {{pato.especie.tipo}}, nació el {{pato.bd|date:"d M Y"}} y vive en el <em>{{ pato.especie.habitat }}</em> </li>
+					{% endfor %}
+				</ul>
+				<a href="/" class="btn btn-primary">Regresa</a>
+			</div>
+		</div>
+	</div>
+{% endblock %}
